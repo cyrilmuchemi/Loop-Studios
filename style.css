@@ -38,6 +38,8 @@ body {
   min-height: 100vh;
   text-rendering: optimizeSpeed;
   line-height: 1.5;
+  position: relative;
+  overflow-x: hidden;
 }
 
 /* A elements that don't have a class get default styles */
@@ -74,6 +76,8 @@ select {
     scroll-behavior: auto !important;
   }
 }
+
+@media only screen and (max-width: 600px) {
 
 #hero {
    background: url('./src/assets/image-hero.jpg');
@@ -141,6 +145,7 @@ h2 {
     padding-inline: 4rem;
     font-size: 32px;
     font-family: 'Josefin Sans', sans-serif;
+    width: 100%;
 }
 
 .creations-container {
@@ -213,6 +218,210 @@ footer {
     padding-top: 1rem;
     width: 100%;
     margin-left: 4rem;
+}
+.nav-list {
+    display: none;
+}
+
+.desktop-button {
+    display: none;
+}
+
+.desktop {
+    display: none;
+}
+
+}
+
+@media only screen and (min-width: 600px) {
+
+    #hero {
+        background: url('./src/assets/image-hero2.jpg');
+        height: 100vh;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+    .logo {
+        margin-left: 2.5rem;
+    }
+
+    .navigation {
+        display: flex;
+        justify-content: space-between;
+        color: #fff;
+        align-items: center;
+        margin-inline: 5.2rem;
+        padding-top: 2.4rem;
+    }
+
+    .nav-list-list {
+        list-style: none;
+        display: flex;
+        gap: 28px;
+        margin-right: 6.2rem;
+    }
+
+    .nav-list-list li:hover {
+        text-decoration: underline;
+        cursor: pointer;
+    }
+
+    .home {
+        margin-top: 14rem;
+    }
+    
+    .box {
+        display: flex;
+        border: 2px solid #fff;
+        color: #fff;
+        width: 550px;
+        font-size: 62px;
+        margin-left: 7rem;
+        overflow: hidden;
+        padding-inline: 2rem;
+        line-height: 58px;
+        padding-top: 1.5rem;
+        padding-bottom: 1.5rem;
+        font-family: 'Josefin Sans', sans-serif;
+    } 
+
+    #mainsec {
+        display: flex;
+        margin-top: 5rem;
+        display: flex;
+        position: relative;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .loopcontainer {
+        width: 500px;
+        height: max-content;
+        padding-left: 3.2rem;
+        position: absolute;
+        margin-left: 31rem;
+        margin-top: 12.2rem;
+        background-color: #fff;
+    }
+
+    h1 {
+        font-family: 'Josefin Sans', sans-serif;
+        font-size: 32px;
+        line-height: 32px;
+        padding-top: 3.3rem;
+    }
+
+    .lopparag {
+        padding-top: 1rem;
+        color: gray;
+        font-family: 'Alata', sans-serif;
+    }
+
+    #creations {
+        margin-top: 5rem;
+    }
+
+    .creation-header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding-inline: 7rem;
+    }
+
+    h2 {
+        font-family: 'Josefin Sans', sans-serif;
+        font-size: 32px;
+
+    }
+
+    .desktop-button {
+        border: 1px solid black;
+        font-family: 'Josefin Sans', sans-serif;
+        padding-inline: 1rem;
+        padding-top: 0.4rem;
+        padding-bottom: 0.4rem;
+        width: 150px;
+        color: #000000;
+        font-weight: 900;
+        background-color: #fff;
+    }
+
+    .desktop-button:hover {
+        background-color: #000000;
+        color: #fff;
+    }
+
+    .creations-container {
+        display: grid;
+        grid-template-columns: repeat(4, 180px);
+        gap: 20px;
+        margin-top: 2.5rem;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .creation {
+        position: relative;
+    }
+
+    .creation h3 {
+        position: absolute;
+        color: rgb(244, 239, 239);
+        font-family: 'Josefin Sans', sans-serif;
+        margin-left: 1.8rem;
+        width: 120px;
+        bottom: 50px;
+    }
+
+    .haburger {
+        display: none;
+    }
+
+    .mobile {
+        display: none;
+    }
+
+    .container-button {
+        display: none;
+    }
+
+    footer {
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        background-color: #000000;
+        padding-inline: 4rem;
+        margin-top: 6rem;
+        position: relative;
+        width: 100%;
+        height: 30vh;
+    }
+
+    .footer-list {
+        display: flex;
+        list-style: none;
+        color: #fff;
+        gap: 25px;
+        margin-left: -36px;
+    }
+
+    .footer-icons {
+        display: flex;
+        position: absolute;
+        margin-top: -6rem;
+        right: 28px;
+        gap: 16px;
+        align-items: center;   
+    }
+
+    .footer-paragraph {
+        position: absolute;
+        right: 20px;
+        color: gray;
+        margin-top: 2rem;
+    }
+
 }
 
 
