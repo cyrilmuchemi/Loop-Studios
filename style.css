@@ -1,0 +1,220 @@
+@import url('https://fonts.googleapis.com/css2?family=Alata&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Alata&family=Josefin+Sans:ital,wght@1,200&display=swap');
+
+/* Box sizing rules */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* Remove default margin */
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+figure,
+blockquote,
+dl,
+dd {
+  margin: 0;
+}
+
+/* Remove list styles on ul, ol elements with a list role, which suggests default styling will be removed */
+ul[role='list'],
+ol[role='list'] {
+  list-style: none;
+}
+
+/* Set core root defaults */
+html:focus-within {
+  scroll-behavior: smooth;
+}
+
+/* Set core body defaults */
+body {
+  min-height: 100vh;
+  text-rendering: optimizeSpeed;
+  line-height: 1.5;
+}
+
+/* A elements that don't have a class get default styles */
+a:not([class]) {
+  text-decoration-skip-ink: auto;
+}
+
+/* Make images easier to work with */
+img,
+picture {
+  max-width: 100%;
+}
+
+/* Inherit fonts for inputs and buttons */
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+/* Remove all animations, transitions and smooth scroll for people that prefer not to see them */
+@media (prefers-reduced-motion: reduce) {
+  html:focus-within {
+   scroll-behavior: auto;
+  }
+  
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+#hero {
+   background: url('./src/assets/image-hero.jpg');
+   height: 100vh;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding-inline: 1.4rem;
+    padding-top: 2.5rem;
+}
+
+.home {
+    margin-top: 20rem;
+    margin-inline: 3rem;
+}
+
+.box {
+    border: 2px solid #fff;
+    color: #fff;
+    font-size: 35px;
+    overflow: hidden;
+    padding-inline: 2rem;
+    line-height: 33px;
+    padding-top: 1.5rem;
+    padding-bottom: 1.5rem;
+    font-family: 'Josefin Sans', sans-serif;
+}
+
+#mainsec {
+    margin-top: 5.5rem;
+}
+
+.interactive {
+    padding-inline: 1.8rem;
+}
+
+.loopcontainer {
+    margin-top: 2.2rem;
+}
+
+h1 {
+    padding-inline: 4rem;
+    font-size: 30px;
+    line-height: 30px;
+    font-family: 'Josefin Sans', sans-serif;
+}
+
+.lopparag {
+    padding-inline: 3rem;
+    margin-top: 1.3rem;
+    font-size: 18px;
+    color: gray;
+    font-family: 'Alata', sans-serif;
+}
+
+#creations {
+    margin-top: 6rem;
+}
+
+h2 {
+    padding-inline: 4rem;
+    font-size: 32px;
+    font-family: 'Josefin Sans', sans-serif;
+}
+
+.creations-container {
+    margin-top: 2.6rem;
+    padding-inline: 1.6rem;
+}
+
+.creation {
+    margin-top: 1rem;
+    position: relative;
+}
+
+.creation h3 {
+    position: absolute;
+    color: rgb(244, 239, 239);
+    font-family: 'Josefin Sans', sans-serif;
+    margin-top: 4rem;
+    margin-left: 1.8rem;
+    width: 120px;
+}
+
+.container-button {
+    margin-top: 2rem;
+    border: 1px solid black;
+    margin-inline: 5.6rem;
+    font-family: 'Josefin Sans', sans-serif;
+    padding-inline: 1rem;
+    padding-top: 0.4rem;
+    padding-bottom: 0.4rem;
+    width: 150px;
+    color: #000000;
+    font-weight: 900;
+    background-color: #fff;
+}
+
+footer {
+    background-color: #000000;
+    margin-top: 6rem;
+}
+
+.footer-container {
+    padding-inline: 7rem;
+    padding-top: 3.3rem;
+}
+
+.footer-list {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: #fff;
+    font-family: 'Alata', sans-serif;
+    list-style: none;
+    padding-inline: 4rem;
+    margin-top: 2.2rem;
+    gap: 1.6rem;
+}
+
+.footer-icons {
+    display: flex;
+    margin-top: 3.3rem;
+    align-items: center;
+    justify-content: space-around;
+    gap: 15px;
+    margin-left: -22px;  
+}
+
+.footer-paragraph {
+    color: rgb(190, 182, 182);
+    padding-bottom: 3rem;
+    padding-top: 1rem;
+    width: 100%;
+    margin-left: 4rem;
+}
+
+
+
+   
