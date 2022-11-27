@@ -6,6 +6,8 @@
 *::before,
 *::after {
   box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 
 /* Remove default margin */
@@ -77,20 +79,96 @@ select {
   }
 }
 
-@media only screen and (max-width: 600px) {
+a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.navbar {
+    display: flex;
+    min-height: 70px;
+    margin-inline: 1rem;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 24px;
+}
+
+.nav-menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 60px;
+    list-style: none;
+}
+
+.nav-link {
+    transition: 0.7s ease;
+}
+
+.nav-link:hover {
+    text-decoration: underline;
+}
+
+.hamburger {
+    display: none;
+    cursor: pointer;
+}
+
+.bar {
+    background-color: #fff;
+    display: block;
+    width: 25px;
+    height: 3px;
+    margin: 5px auto;
+    -webkit-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+}
+
+@media only screen and (max-width: 768px) {
 
 #hero {
    background: url('./src/assets/image-hero.jpg');
    height: 100vh;
 }
 
-nav {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+.navbar.active {
+    background-color: #262626;
+}
+
+.hamburger {
+    display: block;
+}
+
+.hamburger.active .bar:nth-child(2) {
+    opacity: 0;
+}
+
+.hamburger.active .bar:nth-child(1) {
+    transform: translateY(8px) rotate(45deg);
+}
+
+.hamburger.active .bar:nth-child(3) {
+    transform: translateY(-8px) rotate(-45deg);
+}
+
+.nav-menu {
+    position: fixed;
+    left: -100%;
+    top: 70px;
+    gap: 0;
+    flex-direction: column;
     width: 100%;
-    padding-inline: 1.4rem;
-    padding-top: 2.5rem;
+    text-align: center;
+    transition: 0.3s;
+    background-color: #262626;
+}
+
+.nav-item {
+    margin: 16px 0;
+}
+
+.nav-menu.active {
+    left: 0;
 }
 
 .home {
@@ -219,9 +297,6 @@ footer {
     width: 100%;
     margin-left: 4rem;
 }
-.nav-list {
-    display: none;
-}
 
 .desktop-button {
     display: none;
@@ -233,38 +308,13 @@ footer {
 
 }
 
-@media only screen and (min-width: 600px) {
+@media only screen and (min-width: 768px) {
 
     #hero {
         background: url('./src/assets/image-hero2.jpg');
         height: 100vh;
         background-repeat: no-repeat;
         background-size: cover;
-    }
-
-    .logo {
-        margin-left: 2.5rem;
-    }
-
-    .navigation {
-        display: flex;
-        justify-content: space-between;
-        color: #fff;
-        align-items: center;
-        margin-inline: 5.2rem;
-        padding-top: 2.4rem;
-    }
-
-    .nav-list-list {
-        list-style: none;
-        display: flex;
-        gap: 28px;
-        margin-right: 6.2rem;
-    }
-
-    .nav-list-list li:hover {
-        text-decoration: underline;
-        cursor: pointer;
     }
 
     .home {
@@ -313,6 +363,7 @@ footer {
     }
 
     .lopparag {
+        display: flex;
         padding-top: 1rem;
         color: gray;
         font-family: 'Alata', sans-serif;
@@ -326,7 +377,7 @@ footer {
         display: flex;
         justify-content: space-between;
         align-items: center;
-        padding-inline: 7rem;
+        margin-inline: 5rem;
     }
 
     h2 {
@@ -374,10 +425,6 @@ footer {
         bottom: 50px;
     }
 
-    .haburger {
-        display: none;
-    }
-
     .mobile {
         display: none;
     }
@@ -409,7 +456,7 @@ footer {
     .footer-icons {
         display: flex;
         position: absolute;
-        margin-top: -6rem;
+        margin-top: -3.5rem;
         right: 28px;
         gap: 16px;
         align-items: center;   
