@@ -1,5 +1,3 @@
-# Portfolio Project
-
 > Loop Stoodios
 
 
@@ -11,7 +9,7 @@
 
 ## Live Demo (if available)
 
-[Live Demo Link](https://heroic-tapioca-b3bbfe.netlify.app/)
+[Live Demo Link](https://cyrilmuchemi.github.io/Loop-Studios/)
 
 
 ## Getting Started
@@ -27,10 +25,10 @@ To get a local copy up and running follow these simple example steps.
 
 -If you installed git you can clone the code to your machine, or download a ZIP of all the files directly.
 
--[Download the ZIP from this location](https://github.com/cyrilmuchemi/vue-todo-project), or run the following [git](https://git-scm.com/downloads) command to clone the files to your machine:
+-[Download the ZIP from this location](https://github.com/cyrilmuchemi/Loop-Studios), or run the following [git](https://git-scm.com/downloads) command to clone the files to your machine:
 
 -```bash
-git clone https://github.com/cyrilmuchemi/vue-todo-project. 
+git clone https://github.com/cyrilmuchemi/Loop-Studios. 
 
 - Once the files are on your machine, open the Portfolio-Project folder in [Visual Studio Code](https://code.visualstudio.com/), and follow the steps in Installation & Set Up
 
