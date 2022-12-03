@@ -398,7 +398,8 @@ select {
   .desktop-footer {
     background-color: black;
     display: flex;
-    padding-inline: 1rem;
+    width: 100%;
+    padding-inline: 6rem;
     justify-content: space-between;
     align-items: center;
     margin-top: 4.2rem;
