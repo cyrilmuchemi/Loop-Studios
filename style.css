@@ -96,6 +96,11 @@ select {
   cursor: pointer;
 }
 
+.button:hover {
+  color: #fff;
+  background-color: black;
+}
+
 @media only screen and (max-width: 768px) {
   #hero {
     background-image: url('./src/assets/image-hero.jpg');
@@ -290,6 +295,10 @@ select {
     font-family: 'Alata', sans-serif;
     display: flex;
     gap: 30px;
+  }
+
+  .navlink:hover {
+    text-decoration: underline;
   }
 
   .hero {
